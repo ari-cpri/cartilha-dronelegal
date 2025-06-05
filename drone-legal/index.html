@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRONE LEGAL - Orientações para a PMRN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .section-header {
+            position: relative;
+        }
+        /* .section-header::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: #f59e0b;
+        } */
+        .grid-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .nav-item:hover {
+            color: #f59e0b;
+        }
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(#1e3a8a 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="text-blue-900 font-bold rounded-full flex items-center justify-center">
+                    <img src="assets/drone.png" alt="Drone" class="w-full h-12 md:w-full md:h-12 animate-float">
+                </div>
+                <h1 class="text-xl font-bold">DRONE LEGAL</h1>
+            </div>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li class="nav-item">
+                        <a href="#sobre" class="hover:text-yellow-400 transition">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reguladores" class="hover:text-yellow-400 transition">Reguladores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#procedimentos" class="hover:text-yellow-400 transition">Procedimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#restricoes" class="hover:text-yellow-400 transition">Restrições</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="hover:text-yellow-400 transition">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-blue-800">
+            <div class="container mx-auto px-4 py-3">
+                <ul class="flex flex-col space-y-3">
+                    <li>
+                        <a href="#sobre" class="block py-2 hover:text-yellow-400">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#reguladores" class="block py-2 hover:text-yellow-400">Reguladores</a>
+                    </li>
+                    <li>
+                        <a href="#procedimentos" class="block py-2 hover:text-yellow-400">Procedimentos</a>
+                    </li>
+                    <li>
+                        <a href="#restricoes" class="block py-2 hover:text-yellow-400">Restrições</a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="block py-2 hover:text-yellow-400">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern bg-blue-800 text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">DRONE LEGAL</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Orientações para a PMRN</h2>
+                <p class="text-lg mb-8">Voe seguro, voe legal!</p>
+                <div class="flex space-x-4">
+                    <a href="#sobre" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-semibold p-4 rounded-lg transition">Saiba Mais</a>
+                    <a href="#contato" class="border-2 border-white hover:bg-white hover:text-blue-900 font-semibold p-4 rounded-lg transition">Contato</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative flex items-center justify-center space-x-8">
+                    <img src="assets/brasao_pmrn.png" alt="Drone" class="w-full h-32 md:w-full md:h-72 animate-float">
+                    <img src="assets/cosant.png" alt="Drone" class="w-full h-32 md:w-full md:h-80 animate-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-header text-3xl font-bold mb-2">
+                    Sobre a Cartilha
+                    <span class="block inline-block w-full h-1 bg-yellow-400 mt-2"></span>
+                </h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Orientações gerais para integrantes da corporação e forças de segurança pública sobre o uso de drones</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-justify">
+                    <p class="mb-6 text-lg">Prezado(a) Policial Militar do Rio Grande do Norte,</p>
+                    <p class="mb-4">O uso de Drones, ou Aeronaves Remotamente Pilotadas (RPA), tem crescido exponencialmente, seja para fins recreativos, comerciais ou profissionais. Com essa evolução, surgem também desafios e a necessidade de um conhecimento aprofundado sobre suas regulamentações e os procedimentos corretos em diversas situações.</p>
+                    <p>Esta cartilha foi desenvolvida pela Polícia Militar do Estado do Rio Grande do Norte, em parceria com a COSANT, com o objetivo de facilitar o assunto e oferecer orientações gerais aos integrantes da corporação e das forças de segurança pública que não operam Drones. Nosso intuito é capacitá-los para abordagens seguras e eficazes, garantindo a ordem pública e a segurança aérea em nosso estado.</p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg max-w-md w-full">
+                        <h3 class="font-bold text-xl mb-4 text-blue-900">Glossário Essencial</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-caret-right mt-1 mr-2 text-yellow-500"></i>
+                                <span><span class="font-semibold">Drone:</span> Nome popular para aeronave não tripulada.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-caret-right mt-1 mr-2 text-yellow-500"></i>
+                                <span><span class="font-semibold">RPA:</span> Aeronave não tripulada usada para outros fins que não a recreação.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-caret-right mt-1 mr-2 text-yellow-500"></i>
+                                <span><span class="font-semibold">Piloto Remoto:</span> Pessoa que conduz o voo de uma aeronave não tripulada.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-caret-right mt-1 mr-2 text-yellow-500"></i>
+                                <span><span class="font-semibold">Seguro RETA:</span> Seguro obrigatório que cobre danos a terceiros.</span>
+                            </li>
+                        </ul>
+                        <button id="glossary-btn" class="mt-4 text-blue-700 font-medium hover:text-yellow-600 transition">Ver glossário completo</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal for Full Glossary -->
+            <div id="glossary-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+                <div class="bg-white rounded-lg p-6 max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-bold text-blue-900">Glossário Completo</h3>
+                        <button id="close-glossary" class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">Drone</h4>
+                            <p>Nome popular para aeronave não tripulada.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">Aeromodelo</h4>
+                            <p>Aeronave não tripulada usada para recreação.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">RPA (Aeronave Remotamente Pilotada)</h4>
+                            <p>Aeronave não tripulada usada para outros fins que não a recreação (uso comercial, corporativo ou experimental).</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">RPAS (Sistema de RPA)</h4>
+                            <p>Conjunto formado pela aeronave (RPA), pela estação de pilotagem remota (RPS), pelo link de comando e controle e por qualquer outro componente que faça parte do projeto da aeronave.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">Piloto Remoto</h4>
+                            <p>Pessoa que manipula os controles e conduz o voo de uma aeronave não tripulada.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">Observador</h4>
+                            <p>Pessoa que, sem o auxílio de equipamentos, auxilia o piloto remoto na condução segura do voo mantendo contato visual direto com a RPA.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">Pessoa Anuente</h4>
+                            <p>Pessoa cuja presença não é indispensável para que ocorra a operação bem-sucedida de um RPA.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800">Seguro RETA</h4>
+                            <p>Seguro obrigatório para aeronaves, que cobre danos a terceiros, passageiros, tripulantes, pessoas e bens no solo e danos decorrentes de colisão e abalroamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reguladores Section -->
+    <section id="reguladores" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-header inline-block text-3xl font-bold mb-2">Órgãos Reguladores e Sistemas</h2>
+                <span class="block inline-block w-full h-1 bg-yellow-400 mt-2"></span>
+                <p class="text-gray-600 max-w-3xl mx-auto mt-2">Principais entidades que regulam o uso de Drones no Brasil</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid-card bg-white p-6 rounded-xl shadow-md transition transform hover:-translate-y-1">
+                    <div class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-building text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">DECEA</h3>
+                    <p class="text-gray-600 mb-4">Departamento de Controle do Espaço Aéreo Brasileiro</p>
+                    <p class="mb-2"><span class="font-semibold">Função:</span> Gerencia as atividades de controle do espaço aéreo e provê o acesso ao espaço aéreo por aeronaves não tripuladas.</p>
+                    <p><span class="font-semibold">Sistema:</span> SARPAS</p>
+                </div>
+                
+                <div class="grid-card bg-white p-6 rounded-xl shadow-md transition transform hover:-translate-y-1">
+                    <div class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-satellite-dish text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">ANATEL</h3>
+                    <p class="text-gray-600 mb-4">Agência Nacional de Telecomunicações</p>
+                    <p class="mb-2"><span class="font-semibold">Função:</span> Responsável por licenciar equipamentos, emitir certificação e homologação de produtos e administrar o uso de radiofrequência.</p>
+                    <p><span class="font-semibold">Sistema:</span> MOSAICO</p>
+                </div>
+                
+                <div class="grid-card bg-white p-6 rounded-xl shadow-md transition transform hover:-translate-y-1">
+                    <div class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-plane text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">ANAC</h3>
+                    <p class="text-gray-600 mb-4">Agência Nacional de Aviação Civil</p>
+                    <p class="mb-2"><span class="font-semibold">Função:</span> Regula e fiscaliza as atividades de aviação civil. Emite certificados e homologações das aeronaves não tripuladas, bem como licenças dos pilotos remotos.</p>
+                    <p><span class="font-semibold">Sistema:</span> SISANT</p>
+                </div>
+                
+                <div class="grid-card bg-white p-6 rounded-xl shadow-md transition transform hover:-translate-y-1">
+                    <div class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Ministério da Defesa</h3>
+                    <p class="text-gray-600 mb-4">Autoridade responsável por regular a atividade de aerolevantamento.</p>
+                    <p><span class="font-semibold">Sistema:</span> SISCLATEN</p>
+                </div>
+                
+                <div class="grid-card bg-white p-6 rounded-xl shadow-md transition transform hover:-translate-y-1">
+                    <div class="bg-blue-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tractor text-blue-700 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">MAPA</h3>
+                    <p class="text-gray-600 mb-4">Ministério da Agricultura e Pecuária</p>
+                    <p class="mb-2"><span class="font-semibold">Função:</span> Autoridade responsável pela gestão das políticas públicas de estímulo à agropecuária.</p>
+                    <p><span class="font-semibold">Sistema:</span> SIPEAGRO</p>
+                </div>
+            </div>
+            
+            <div class="mt-10 bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-blue-900">Classificação de Drones pela ANAC</h3>
+                <p class="mb-4">A ANAC classifica os Drones de acordo com seu peso máximo de decolagem. Nesta cartilha, focaremos nas orientações para Drones enquadrados na Classe 3, a mais comum em diversas ocorrências:</p>
+                
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="border-l-4 border-blue-700 pl-4 py-2">
+                        <h4 class="font-semibold text-lg">Classe 1</h4>
+                        <p>RPA com Peso máximo de decolagem maior que 150 kg.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-700 pl-4 py-2">
+                        <h4 class="font-semibold text-lg">Classe 2</h4>
+                        <p>RPA com Peso máximo de decolagem maior que 25kg e até 150 kg.</p>
+                    </div>
+                    <div class="border-l-4 border-blue-700 pl-4 py-2">
+                        <h4 class="font-semibold text-lg">Classe 3</h4>
+                        <p>RPA com Peso máximo de decolagem até 25 kg (comum em ocorrências).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procedimentos Section -->
+    <section id="procedimentos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-header inline-block text-3xl font-bold mb-2">Procedimentos em Ocorrências</h2>
+                <span class="block inline-block w-full h-1 bg-yellow-400 mt-2"></span>
+                <p class="text-gray-600 max-w-3xl mx-auto mt-2">Orientações para abordagens seguras e eficazes</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-700">
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">Passos Iniciais</h3>
+                    <ol class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="bg-blue-700 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 text-sm font-medium">1</span>
+                            <span>Identifique o local e o piloto.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-700 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 text-sm font-medium">2</span>
+                            <span>Aproxime-se com segurança e ordene que o piloto remoto pouse o Drone.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-700 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1 text-sm font-medium">3</span>
+                            <span>Pergunte ao piloto remoto se ele é maior de idade e se é um piloto recreativo ou profissional.</span>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">Documentação Necessária</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Documento de identificação com foto.</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Cadastro do Drone na ANAC (SISANT).</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Solicitação e autorização de voo emitida pelo DECEA (SARPAS).</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Apólice de seguro RETA (para pilotos profissionais).</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Análise de Risco (para pilotos profissionais).</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                <h3 class="text-xl font-bold mb-4 text-blue-900">Verificações Importantes</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-triangle mt-1 mr-3 text-red-500"></i>
+                        <span>Verifique se existe a marca da ANATEL no controle e/ou Drone. Caso não, exija o certificado de homologação.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-triangle mt-1 mr-3 text-red-500"></i>
+                        <span>Solicite o Manual da Aeronave.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-triangle mt-1 mr-3 text-red-500"></i>
+                        <span><strong>Importante:</strong> Em caso de um voo fora das normas estabelecidas, o operador poderá ser conduzido à delegacia de polícia.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restrições Section -->
+    <section id="restricoes" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-header inline-block text-3xl font-bold mb-2">Restrições e Condutas Proibidas</h2>
+                <span class="block inline-block w-full h-1 bg-yellow-400 mt-2"></span>
+                <p class="text-blue-200 max-w-3xl mx-auto mt-2">Operações com Drones que são restritas ou proibidas</p>
+            </div>
+            
+            <div class="bg-blue-800 rounded-xl p-6 md:p-8 mb-8">
+                <h3 class="text-xl font-bold mb-4">Condições Operacionais</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-ban mt-1 mr-3 text-red-400"></i>
+                        <span>Não é permitido operar Drones sob efeito de substâncias psicoativas e todos os operadores estão sujeitos às regras quanto ao uso de álcool e de drogas constantes do item 91.17 do Regulamento Brasileiro de Homologação Aeronáutica RBHA 91.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-circle mt-1 mr-3 text-yellow-300"></i>
+                        <span>A utilização de drones, mesmo sem a tomada de imagens, pode representar riscos de colisão ou acidentes, especialmente em áreas urbanas com grande concentração de pessoas.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-ruler mt-1 mr-3 text-blue-200"></i>
+                        <span>Local de Operação: A distância da aeronave não tripulada NÃO poderá ser inferior a 30 metros horizontais de pessoas não envolvidas e não anuentes com a operação.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-shield-alt mt-1 mr-3 text-green-300"></i>
+                        <span>Esse limite não é aplicável para operações por órgão de segurança pública, de polícia, de fiscalização tributária e aduaneira, de combate a vetores de transmissão de doenças, de defesa civil e/ou do corpo de bombeiros, ou operador a serviço de um destes.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white text-gray-800 rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">Autorizações Especiais</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-info-circle mt-1 mr-3 text-blue-600"></i>
+                            <span>Operações VLOS (Visual Line-Of-Sight) com drones que possuem peso máximo de decolagem de até 250 g, realizadas fora de zona de restrição de voo e até 200 ft (aproximadamente 60 metros), estão dispensadas de solicitação no SARPAS.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-info-circle mt-1 mr-3 text-blue-600"></i>
+                            <span>As operações no entorno de estrutura, que não cumprem as condicionantes de distanciamento de aeródromos, devem ser solicitadas com o mínimo de 4 dias de antecedência.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-info-circle mt-1 mr-3 text-blue-600"></i>
+                            <span>Os voos próximos a sítios aeroportuários (aeródromos e helipontos) devem obter a autorização de voo por meio do Termo de Coordenação junto aos seus administradores.</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white text-gray-800 rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">Documentos Adicionais</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-file-alt mt-1 mr-3 text-blue-600"></i>
+                            <span>Documentos como Análise de Impacto sobre a Segurança Operacional (AISO), Registro Preliminar de Segurança Operacional (RAPSO) e Acordo Operacional (AOp) devem ser anexados à solicitação.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-exclamation-triangle mt-1 mr-3 text-yellow-500"></i>
+                            <span>O não cumprimento dessas recomendações poderá acarretar a não aprovação do voo.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-balance-scale mt-1 mr-3 text-red-500"></i>
+                            <span>Ao planejar e solicitar um voo, é fundamental estar ciente das legislações em vigor, em prol da segurança e da prevenção de possíveis infrações.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-bold mb-4">Enquadramentos Legais Relevantes</h3>
+                <p class="mb-4 text-gray-300">O uso irregular de Drones pode acarretar diversas consequências legais:</p>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-semibold text-yellow-400 mb-2">Lei de Contravenções Penais (Decreto-Lei 3.688/41)</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><span class="font-medium">Art. 35:</span> Entregar-se na prática da aviação a acrobacias ou a voos baixos, fora da zona em que a lei o permite, ou fazer descer a aeronave fora dos lugares destinados a esse fim.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-semibold text-yellow-400 mb-2">Código Penal (Decreto-Lei 2.848/40)</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><span class="font-medium">Art. 132:</span> Expor a vida ou a saúde de outrem a perigo direto e iminente. Pena: detenção, se o fato não constitui crime mais grave.</li>
+                            <li><span class="font-medium">Art. 129:</span> Ofender a integridade corporal ou a saúde de outrem.</li>
+                            <li><span class="font-medium">Art. 261:</span> Expor a perigo embarcação ou aeronave, própria ou alheia, ou praticar qualquer ato tendente a impedir ou dificultar navegação marítima, fluvial ou aérea. Pena: reclusão, de dois a cinco anos.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h4 class="font-semibold text-yellow-400 mb-2">Outras Legislações</h4>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><span class="font-medium">Código Civil - Lei 10.406/02:</span> Aquele que, por ação ou omissão voluntária, negligência ou imprudência, violar direito e causar dano a outrem, ainda que exclusivamente moral, comete ato ilícito.</li>
+                            <li><span class="font-medium">Constituição Federal/88:</span> São invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-4 bg-red-900 p-4 rounded-lg">
+                    <p class="font-semibold">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                        <span>Importante! Outras sanções poderão ser aplicadas conforme regras de outros órgãos públicos, como a ANATEL, DECEA e o Ministério da Defesa.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Section -->
+    <section>
+        <div class="container mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="section-header inline-block text-3xl font-bold mb-2">Mapa Rio Branco</h2>
+                <span class="block inline-block w-full h-1 bg-yellow-400 mt-2"></span>
+                <p class="text-gray-600 max-w-3xl mx-auto mt-2">Restrições da área do aeroporto</p>
+            </div>
+
+            <div class="relative w-full h-0 pb-[55%]">
+                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1fWWIfBk4gyyT_RfMULKqFBOX-nXhKmU&ehbc=2E312F" class="mx-auto justify-center absolute inset-0 w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acidentes Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-header inline-block text-3xl font-bold mb-2">Em Caso de Acidentes</h2>
+                <span class="block inline-block w-full h-1 bg-yellow-400 mt-2"></span>
+                <p class="text-gray-600 max-w-3xl mx-auto mt-2">Ações imediatas para preservar a segurança e facilitar a investigação</p>
+            </div>
+            
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg max-w-3xl mx-auto">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-red-600 text-white p-8 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-4">Procedimento Imediato</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-white text-red-600 rounded-full w-8 h-8 flex items-center justify-center shrink-0 mr-3 font-bold">1</div>
+                                <span>ISOLAR E PRESERVAR O LOCAL, incluindo a aeronave e seus destroços.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-white text-red-600 rounded-full w-8 h-8 flex items-center justify-center shrink-0 mr-3 font-bold">2</div>
+                                <span>INFORMAR IMEDIATAMENTE AO SERVIÇO REGIONAL DE INVESTIGAÇÃO E PREVENÇÃO DE ACIDENTES AERONÁUTICOS (SERIPA II).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-phone-alt text-blue-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-blue-900">Contato SERIPA II</h4>
+                                <p class="text-blue-700 font-medium">(81) 99161-2232</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-3 mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-blue-900">Local de Ocorrência</h4>
+                                <p>Registrar coordenadas GPS e fotografar o local se possível</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-header inline-block text-3xl font-bold mb-2">Links e Telefones Úteis</h2>
+                <span class="block inline-block w-full h-1 bg-yellow-400 mt-2"></span>
+                <p class="text-gray-600 max-w-3xl mx-auto mt-2">Acesso rápido à informação e contatos importantes</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                <a href="https://sistemas.anatel.gov.br/mosaico" target="_blank" class="group">
+                    <div class="grid-card bg-gray-100 hover:bg-blue-50 p-6 rounded-xl border border-gray-200 hover:border-blue-300 transition transform hover:-translate-y-1">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-700 group-hover:bg-blue-600 text-white rounded-lg p-3 mr-4 transition">
+                                <i class="fas fa-globe text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-blue-900 group-hover:text-blue-700 transition">ANATEL - MOSAICO</h3>
+                        </div>
+                        <p class="text-gray-600">Sistema Integrado de Gestão e Controle do Espectro.</p>
+                        <div class="mt-4 text-blue-600 font-medium group-hover:text-blue-800 transition">sistemas.anatel.gov.br/mosaico</div>
+                    </div>
+                </a>
+                
+                <a href="https://www.gov.br/anac/pt-br/assuntos/drones/novo-sisant" target="_blank" class="group">
+                    <div class="grid-card bg-gray-100 hover:bg-blue-50 p-6 rounded-xl border border-gray-200 hover:border-blue-300 transition transform hover:-translate-y-1">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-700 group-hover:bg-blue-600 text-white rounded-lg p-3 mr-4 transition">
+                                <i class="fas fa-plane text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-blue-900 group-hover:text-blue-700 transition">ANAC - SISANT</h3>
+                        </div>
+                        <p class="text-gray-600">Sistema de Aeronaves Não Tripuladas.</p>
+                        <div class="mt-4 text-blue-600 font-medium group-hover:text-blue-800 transition">gov.br/anac/drones</div>
+                    </div>
+                </a>
+                
+                <a href="https://sarpas.decea.mil.br" target="_blank" class="group">
+                    <div class="grid-card bg-gray-100 hover:bg-blue-50 p-6 rounded-xl border border-gray-200 hover:border-blue-300 transition transform hover:-translate-y-1">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-700 group-hover:bg-blue-600 text-white rounded-lg p-3 mr-4 transition">
+                                <i class="fas fa-satellite text-xl"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-blue-900 group-hover:text-blue-700 transition">DECEA - SARPAS</h3>
+                        </div>
+                        <p class="text-gray-600">Solicitação de Acesso ao Espaço Aéreo por Drones.</p>
+                        <div class="mt-4 text-blue-600 font-medium group-hover:text-blue-800 transition">sarpas.decea.mil.br</div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">Telefones Úteis</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-phone text-blue-700"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Polícia Militar</p>
+                                <p class="text-gray-700">190</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-phone text-blue-700"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Polícia Rodoviária Federal</p>
+                                <p class="text-gray-700">191</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-phone text-blue-700"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">SAMU</p>
+                                <p class="text-gray-700">192</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-phone text-blue-700"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">DTCEA-NT</p>
+                                <p class="text-gray-700">(84) 3644-7192</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="bg-blue-100 rounded-full p-2 mr-4">
+                                <i class="fas fa-phone text-blue-700"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">SERIPA II</p>
+                                <p class="text-gray-700">(81) 99161-2232</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <!-- <h3 class="text-xl font-bold mb-4 text-blue-900">Redes Sociais</h3>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="#" class="bg-blue-700 hover:bg-blue-800 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-red-600 hover:bg-red-700 text-white rounded-full w-10 h-10 flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div> -->
+                    
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Endereço</h3>
+                    <p class="text-gray-700 mb-4">5ª Seção do Estado Maior - Pm5 EMG<br>
+                    Av. Rodrigues Alves, S/N - Tirol, Natal - RN<br>
+                    CEP: 59020-200</p>
+                    
+                    <a href="http://www.pm.rn.gov.br/" target="_blank" class="text-blue-700 hover:text-blue-900 font-medium">www.pm.rn.gov.br</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="assets/brasao_pmrn.png" alt="PMRN Logo" class="mr-4 w-8 h-12 md:w-8 md:h-10">
+                    <!-- <img src="assets/cosant.png" alt="COSANT Logo" class="mr-4 w-8 h-12 md:w-8 md:h-10"> -->
+                    <div>
+                        <h3 class="text-xl font-bold">POLÍCIA MILITAR DO ESTADO DO RIO GRANDE DO NORTE</h3>
+                        <p class="text-blue-200">URGÊNCIA? DISQUE 190</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="mb-2">© 2025 DRONE LEGAL - PMRN. Todos os direitos reservados.</p>
+                    <p class="text-blue-300">Cartilha desenvolvida em parceria com COSANT</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-700 hover:bg-blue-800 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Glossary Modal
+        const glossaryBtn = document.getElementById('glossary-btn');
+        const glossaryModal = document.getElementById('glossary-modal');
+        const closeGlossary = document.getElementById('close-glossary');
+        
+        glossaryBtn.addEventListener('click', () => {
+            glossaryModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeGlossary.addEventListener('click', () => {
+            glossaryModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
